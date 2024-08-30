@@ -19,6 +19,11 @@ export default function UserPage({ params }: Props) {
     const [userGists, setUserGists] = useState<any>(null);
     const [userLanguages, setUserLanguages] = useState<any>(null);
     const { isOpen, onOpen, onOpenChange } = useDisclosure();
+    const [isMounted, setIsMounted] = useState(false);
+
+    useEffect(() => {
+        setIsMounted(true);
+    }, []);
 
     useEffect(() => {
         const getUser = async () => {
@@ -62,15 +67,18 @@ export default function UserPage({ params }: Props) {
         setUserLanguages(languages);
     },[userRepositories]);
 
-    return (
+    if (!isMounted) {
+        return null;
+    }
 
+    return (
         <div>
             <head>
-  <title>Hello world</title>
-  <meta
-    property="og:image"
-    content={user ? `https://me-cv-ai.netlify.app/api/frame?userId=${user.login}` : ''}/>
-</head>
+                <title>Hello world</title>
+                <meta
+                    property="og:image"
+                    content={user ? `https://mecvapp.netlify.app/api/frame?userId=${user.name}` : ''}/>
+            </head>
             <>
             {!user ? (
                 <div>Loading...</div>
