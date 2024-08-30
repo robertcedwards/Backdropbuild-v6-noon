@@ -79,7 +79,7 @@ export default function UserPage({ params }: Props) {
                     property="og:image"
                     content={user ? `https://me-cvai.netlify.app/api/frame?userId=${user.login}` : ''}/>
                 <meta
-                    property="fc:frame:image"
+                    name="fc:frame:image"
                     content={user ? `https://me-cvai.netlify.app/api/frame?userId=${user.login}` : ''}/>
                                     <meta name="fragment" content="!" />
                 <meta name="fc:frame" content="vNext" />
