@@ -88,11 +88,11 @@ export default function UserPage({ params }: Props) {
                 <meta name="fc:frame:button:1" content="Profile" />
                 <meta name="fc:frame:button:1:action" content="link" />
                 <meta name="fc:frame:button:1:target" content={user ? `https://me-cvai.netlify.app/user/${user.login}` : ''} />
-                <meta name="fc:frame:button:2" content="Mint" />
-<meta name="fc:frame:button:2:action" content="mint" />
+                <meta name="fc:frame:button:2" content="Mint your pass" />
+<meta name="fc:frame:button:2:action" content="tx" />
 <meta
   name="fc:frame:button:2:target"
-  content="eip155:8453:0x7a33eb3c8c2e137b7780cb175119ecb78c092448:2"
+  content="https://farcaster.manifold.xyz/tx/farcaster/3794878704"
 />
                 <meta property="of:accepts:xmtp" content="2024-02-01" />
 
