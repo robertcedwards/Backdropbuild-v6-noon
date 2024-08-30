@@ -77,7 +77,7 @@ export default function UserPage({ params }: Props) {
                 <title>Hello world</title>
                 <meta
                     property="og:image"
-                    content={user ? `https://mecvapp.netlify.app/api/frame?userId=${user.login}` : ''}/>
+                    content={user ? `https://me-cvai.netlify.app/api/frame?userId=${user.login}` : ''}/>
             </head>
             <>
             {!user ? (
