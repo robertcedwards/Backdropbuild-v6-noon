@@ -87,9 +87,9 @@ export default function UserPage({ params }: Props) {
                     content={user ? `https://me-cvai.netlify.app/api/frame?userId=${user.login}` : ''}/>                                    
                 <meta name="fc:frame:button:1" content="Profile" />
                 <meta name="fc:frame:button:1:action" content="link" />
-                <meta name="fc:frame:button:1:target" content="https://me-cvai.netlify.app/user/${user.login}" />
+                <meta name="fc:frame:button:1:target" content={user ? `https://me-cvai.netlify.app/user/${user.login}` : ''} />
                 <meta name="fc:frame:button:2" content="Mint" />
-<meta name="fc:frame:button:1:action" content="mint" />
+<meta name="fc:frame:button:2:action" content="mint" />
 <meta
   name="fc:frame:button:2:target"
   content="eip155:8453:0x7a33eb3c8c2e137b7780cb175119ecb78c092448:1"
