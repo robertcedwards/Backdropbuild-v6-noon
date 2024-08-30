@@ -92,7 +92,7 @@ export default function UserPage({ params }: Props) {
 <meta name="fc:frame:button:1:action" content="mint" />
 <meta
   name="fc:frame:button:2:target"
-  content="eip155:8453:0xf5a3b6dee033ae5025e4332695931cadeb7f4d2b:1"
+  content="eip155:8453:0x7a33eb3c8c2e137b7780cb175119ecb78c092448:1"
 />
                 <meta property="of:accepts:xmtp" content="2024-02-01" />
 
