@@ -85,13 +85,13 @@ export default function UserPage({ params }: Props) {
                  <meta
                     property="og:image"
                     content={user ? `https://me-cvai.netlify.app/api/frame?userId=${user.login}` : ''}/>                                    
-                <meta property="fc:frame:button:1" content="Profile" />
-                <meta property="fc:frame:button:1:action" content="link" />
-                <meta property="fc:frame:button:1:target" content="https://me-cvai.netlify.app/user/${user.login}" />
-                <meta property="fc:frame:button:2" content="Mint" />
-<meta property="fc:frame:button:1:action" content="mint" />
+                <meta name="fc:frame:button:1" content="Profile" />
+                <meta name="fc:frame:button:1:action" content="link" />
+                <meta name="fc:frame:button:1:target" content="https://me-cvai.netlify.app/user/${user.login}" />
+                <meta name="fc:frame:button:2" content="Mint" />
+<meta name="fc:frame:button:1:action" content="mint" />
 <meta
-  property="fc:frame:button:2:target"
+  name="fc:frame:button:2:target"
   content="eip155:8453:0xf5a3b6dee033ae5025e4332695931cadeb7f4d2b:1"
 />
                 <meta property="of:accepts:xmtp" content="2024-02-01" />
