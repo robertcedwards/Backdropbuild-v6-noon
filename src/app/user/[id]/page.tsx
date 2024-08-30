@@ -74,10 +74,32 @@ export default function UserPage({ params }: Props) {
     return (
         <div>
             <head>
-                <title>Hello world</title>
+
                 <meta
                     property="og:image"
                     content={user ? `https://me-cvai.netlify.app/api/frame?userId=${user.login}` : ''}/>
+                <meta
+                    property="fc:frame:image"
+                    content={user ? `https://me-cvai.netlify.app/api/frame?userId=${user.login}` : ''}/>
+                                    <meta name="fragment" content="!" />
+                <meta name="fc:frame" content="vNext" />
+                <meta name="fc:frame:button:1"/>
+                <meta name="fc:frame:button:1:action" content="Profile" />
+                <meta name="fc:frame:button:1:target" content="https://me-cvai.netlify.app/user/${user.login}" />
+                <meta name="of:accepts:xmtp" content="2024-02-01" />
+                <meta property="og:title" content="Me CV.ai" />
+                <meta property="og:description" content="Eliminating Technical Interviews one Profile at a Time" />
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content={user ? `https://me-cvai.netlify.app/user/${user.login}` : ''} />
+                <meta property="og:site_name" content="Me CV.ai" />
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:site" content="@MeCVai" />
+                <meta name="twitter:title" content="Me CV.ai" />
+                <meta name="twitter:description" content="Eliminating Technical Interviews one Profile at a Time" />
+                <meta
+                    name="twitter:image"
+                    content={user ? `https://me-cvai.netlify.app/api/frame?userId=${user.login}` : ''}/>
+
             </head>
             <>
             {!user ? (
